@@ -50,39 +50,39 @@ Deploy para Azure Web App
 
 ## Configuração do Ambiente
 
-1.Checkout de Código
+   1.Checkout de Código
 
-Utiliza a ação actions/checkout@v4 para clonar o repositório do GitHub no ambiente de execução
-
-
-2.Set up Java version
-
-Utiliza a ação actions/setup-java@v1 para configurar o ambiente com a versão do Java necessária (Java 17).
+      Utiliza a ação actions/checkout@v4 para clonar o repositório do GitHub no ambiente de execução
 
 
-3. Build com Maven
+   2.Set up Java version
 
-Executa o comando mvn clean install para compilar o código e gerar o arquivo JAR.
-
-
-4. Upload artifact
-
-Usa a ação actions/upload-artifact@v3 para fazer upload do arquivo JAR gerado para ser usado na fase de deploy.
+      Utiliza a ação actions/setup-java@v1 para configurar o ambiente com a versão do Java necessária (Java 17).
 
 
-5. Download artifact
+   3. Build com Maven
 
-Utiliza a ação actions/download-artifact@v3 para baixar o artefato JAR gerado na fase de build.
-
-
-6. Login no Azure
-
-Utiliza a ação azure/login@v1 para autenticar no Azure com as credenciais armazenadas nos GitHub Secrets.
+      Executa o comando mvn clean install para compilar o código e gerar o arquivo JAR.
 
 
-7. Deploy para Azure Web App
+   4. Upload artifact
 
-Usa a ação azure/webapps-deploy@v2 para implantar o artefato JAR no Azure Web App.
+      Usa a ação actions/upload-artifact@v3 para fazer upload do arquivo JAR gerado para ser usado na fase de deploy.
+
+
+   5. Download artifact
+
+      Utiliza a ação actions/download-artifact@v3 para baixar o artefato JAR gerado na fase de build.
+
+
+   6. Login no Azure
+
+      Utiliza a ação azure/login@v1 para autenticar no Azure com as credenciais armazenadas nos GitHub Secrets.
+
+
+   7. Deploy para Azure Web App
+
+      Usa a ação azure/webapps-deploy@v2 para implantar o artefato JAR no Azure Web App.
 
 
 ## Endpoints da API
