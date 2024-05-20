@@ -50,12 +50,12 @@ Deploy para Azure Web App
 
 ## Configuração do Ambiente
 
-   1.Checkout de Código
+   1. Checkout de Código
 
-      Utiliza a ação actions/checkout@v4 para clonar o repositório do GitHub no ambiente de execução
+      Utiliza a ação actions/checkout@v4 para clonar o repositório do GitHub no ambiente de execução.
 
 
-   2.Set up Java version
+   2. Set up Java version
 
       Utiliza a ação actions/setup-java@v1 para configurar o ambiente com a versão do Java necessária (Java 17).
 
