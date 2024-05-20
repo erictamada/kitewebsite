@@ -51,7 +51,7 @@ POST /produto/form: Adiciona um novo produto
 
 ## Scripts JSON de Exemplo
 
-# Fornecedor
+Fornecedor
 {
   "id": 1,
   "nome": "Fornecedor Exemplo",
@@ -59,7 +59,7 @@ POST /produto/form: Adiciona um novo produto
   "contato": "contato@exemplo.com"
 }
 
-# Produto
+Produto
 {
   "id": 1,
   "nome": "Produto Exemplo",
