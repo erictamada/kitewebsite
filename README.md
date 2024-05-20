@@ -13,19 +13,19 @@ Esta é a aplicação KiteWeb, uma aplicação Spring Boot para gerenciar fornec
 
 - Clone o repositório:
 
-   ```sh
-   git clone https://github.com/<seu-usuario>/<seu-repositorio>.git
-   cd <seu-repositorio>
+   git clone https://github.com/erictamada/kitewebsite.git
+   cd kitewebsite
 
 
 ## Execuntando a Aplicação
 
 1. Compile e execute a aplicação localmente:
 
-  mvn clean install
-  mvn spring-boot:run
+     mvn clean install
+   
+     mvn spring-boot:run
 
-2. Acesse a aplicação em http://localhost:8090.
+3. Acesse a aplicação em http://localhost:8090.
 
 ## Testes
   Execute os testes com Maven:
@@ -44,10 +44,15 @@ Execução dos testes
 Deploy para Azure Web App
 
 ## Endpoints da API
+
 GET /fornecedor/lista: Lista todos os fornecedores
+
 POST /fornecedor/form: Adiciona um novo fornecedor
+
 GET /produto/lista: Lista todos os produtos
+
 POST /produto/form: Adiciona um novo produto
+
 
 ## Scripts JSON de Exemplo
 
